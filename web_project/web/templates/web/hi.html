@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<body>
+
+  <h3> {{title}} </h3>
+
+
+
+  <form method="post" enctype="multipart/form-data" action="">
+{% csrf_token %}
+<input type="file"  name="file"  >
+
+<input type="submit" value="Check flower Class " />
+
+  </br>
+
+
+
+
+
+
+</form>
+
+<div>
+
+
+   <h3> flower class :  {{class}} </h3>
+    <input type="image" src="{{src}}" height="140" width="140">
+
+</div>
+
+</body>
+</html>
